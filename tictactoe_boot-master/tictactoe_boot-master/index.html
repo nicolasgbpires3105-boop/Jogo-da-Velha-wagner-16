@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="Nicolas Pires">
+    <title>All Games - Home</title>
+
+    <!-- Fonte do projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top bg-cor-que-eu-quero">
+        <section class="container py-1">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="img-fluid" width="40" src="images/noughts.png" alt="Símbolo do jogo da velha">
+                <span>All Games</span>
+            </a>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                data-bs-target="#navbar-items">
+                <i class="bi bi-filter-square-fill"></i>
+            </button>
+
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dicas.html">Dicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </section>
+
+        </section>
+    </nav>
+</header>
+
+<main class="principal">
+
+    <section class="container" id="container-top">
+
+        <section class="row g-2">
+
+            <!-- JOGO DA VELHA -->
+            <section class="col-12 col-md-6" id="titulo">
+
+                <section class="col-12 text-center">
+                    <h4 class="primary-color">Changeman vs Kamen Rider Black</h4>
+                </section>
+
+                <section class="tabuleiro">
+                    <section class="celula" data-celula></section>
+                    <section class="celula" data-celula></section>
+                    <section class="celula" data-celula></section>
+                    <section class="celula" data-celula></section>
+                    <section class="celula" data-celula></section>
+                    <section class="celula" data-celula></section>
+                    <section class="celula" data-celula></section>
+                    <section class="celula" data-celula></section>
+                    <section class="celula" data-celula></section>
+                </section>
+
+                <section class="status text-center mt-2">
+                    <p>É a vez do jogador Changeman</p>
+                </section>
+
+                <section class="reset-button text-center mt-2">
+                    <button class="btn btn-primary" id="reset-button">Reiniciar</button>
+                </section>
+
+            </section>
+
+            <!-- SLIDESHOW -->
+            <section class="col-12 col-md-6" id="titulo">
+
+                <section class="col-12 text-center">
+                    <h4 class="primary-color">Galeria de jogos</h4>
+                </section>
+
+                <section class="container" id="container-carousel">
+
+                    <section class="carousel slide" id="slider"
+                        data-bs-ride="carousel" data-bs-interval="3000">
+
+                        <section class="carousel-indicators">
+                            <button type="button" class="active" data-bs-target="#slider"
+                                data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#slider"
+                                data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#slider"
+                                data-bs-slide-to="2"></button>
+                        </section>
+
+                        <section class="carousel-inner">
+
+                            <section class="carousel-item active">
+                                <img class="d-block w-100" src="images/tictactoe.jpg" alt="Jogo da velha">
+                                <section class="carousel-caption">
+                                    <h4>Jogo da velha</h4>
+                                    <a href="dicas.html" class="btn btn-primary">Veja dicas</a>
+                                </section>
+                            </section>
+
+                            <section class="carousel-item">
+                                <img class="d-block w-100" src="images/jogo_da_velha.jpg" alt="Tabuleiro">
+                                <section class="carousel-caption">
+                                    <h4>Clássicos dos games</h4>
+                                    <a href="historia.html" class="btn btn-primary">Conheça a história</a>
+                                </section>
+                            </section>
+
+                            <section class="carousel-item">
+                                <img class="d-block w-100" src="images/jogo.jpg" alt="Videogame">
+                                <section class="carousel-caption">
+                                    <h4>Cultura gamer</h4>
+                                    <a href="sobre.html" class="btn btn-primary">Sobre o autor</a>
+                                </section>
+                            </section>
+
+                        </section>
+
+                    </section>
+                </section>
+
+                <!-- CARTÃO DO AUTOR -->
+                <section class="col-12 mb-3 mb-sm-0">
+                    <section class="card">
+                        <section class="card-body">
+                            <h5 class="card-title">Sobre o autor</h5>
+                            <p class="card-text">
+                                Conheça um pouco sobre quem criou este projeto.
+                            </p>
+                            <a href="sobre.html" class="btn btn-primary">Portfólio</a>
+                            <a href="dicas.html" class="btn btn-primary">Curiosidades</a>
+                        </section>
+                    </section>
+                </section>
+
+            </section>
+
+        </section>
+    </section>
+</main>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS do projeto -->
+<script src="js/myscript.js"></script>
+
+</body>
+</html>
